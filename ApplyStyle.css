@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+
+
+#LiteralyEverything {
+  font-family: 'Oxygen', sans-serif;
+}
+
+#HousingBox {
+  background-color: green;
+  float: left;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#header {
+  padding: 80x;
+  text-align: center;
+  background-image: url(https://s31.postimg.cc/wm11t33aj/brunch.png);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  min-width: 1%;
+}
+
+
+#navbar {
+  display: flex;
+  background-color: #06BD55;
+}
+
+
+.NavSpace {
+  flex: 20%
+
+}
+#navbar a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 60%;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 
+    background-color .25s,
+    color .25s;
+}
+
+
+@media screen and (max-width: 700px) {
+  .SpaceMaker, #navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #navbar a, .navspace {
+    flex: 1%;
+    background-color: inherit;
+  }
+}
+
+.holdall {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+
+.main { 
+  flex: 10%;
+  background-color: #00ff90;
+  text-align: center;
+  padding: 2px, 2px;
+  font-size: 50px;
+  color: crimson;
+}
+
+.main h1{
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 1px;
+  width: 100%;
+  z-index: 100;
+}
+
+@media screen and (max-width: 700px) {
+  .sticky {
+    position: relative;
+    background-attachment: scroll;
+
+  }
+}
+
+
+/*  I dont actually need these but hey dey got cool names.
+
+.WhyOhWhyDoesCssHateCentering {
+  flex: 10%;
+}
+.CssCentering_WhatFreshHeckIsThis {
+  flex: 80%;
+  font-size: 50px;
+}
+.VeRtIcLeAlIgNiNgInCsSiSpOsSiBlE {
+  flex: 10%;
+}
+*/
