@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+  <html>
+    <head>
+      <link rel="stylesheet" href="LocationStyle.css">
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen" rel="stylesheet">
+    </head>
+
+    <!-- WELCOME TO THE GARDENS, PLEASE RESPECT THE RULES! -->
+    <!-- A song, by Water Guns and Roses -->
+    <title>The Gardens</title>
+    <div id="LiteralyEverything">
+      <span id="HousingBox">
+        Looking for the housing website? Try <a href="https://sites.google.com/mypisd.net/growing-plants-and-people/home"> Here. </a>
+      </span>
+
+
+      <div id="header">
+      </div>
+
+
+      <div id="navbar">
+        <span class="NavSpace"></span>
+        <a href="index.html">Back</a> 
+        <span class="NavSpace"></span>
+
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        </script>
+      </div>
+
+
+
+
+      <div class="holdall">
+        <div class="main">
+          <h1>Where We Are</h1>
+          <p>
+            Currently, our only location is at 127 Topaz Way, San Francisco, San Francisco County, CA, but we hope to expand soon.
+          </p>
+        </div>
+      </div>
+      <div class="totall">
+        
+        Map:
+        <div id="map"><script class="map" src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBlLpJzwbANDSdfmvv6RYWecqPm3kX6kZw'></script><div style='overflow:hidden;height:500px;width:520px;'><div id='gmap_canvas' style='height:500px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>embed google map</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=07c8898783aac19fd6a826a19aa4e40c595e07c8'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(37.7407631,-122.43629720000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.7407631,-122.43629720000001)});infowindow = new google.maps.InfoWindow({content:'<strong>The Gardens</strong><br>127 Topaz Way, San Francisco, San Francisco County, CA<br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
+        <br>     
+
+      </div>
+    </div>
+  </html>

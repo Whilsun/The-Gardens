@@ -1,0 +1,105 @@
+!<DOCTYPE HTML>
+  <html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen" rel="stylesheet">
+    </head>
+    
+    <!-- WELCOME TO THE GARDENS, PLEASE RESPECT THE RULES! -->
+
+    <title>The Gardens</title>
+    <div id="LiteralyEverything">
+      <span id="HousingBox">
+        Looking for the housing website? Try <a href="https://sites.google.com/mypisd.net/growing-plants-and-people/home"> Here. </a>
+      </span>
+
+
+      <div id="header">
+      </div>
+
+
+      <div id="navbar">
+        <span class="NavSpace"></span>
+        <a href="food.html">Food</a>
+        <a href="Location.html">Location</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Apply.html">Job Applications</a>
+        <span class="NavSpace"></span>
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        </script>
+      </div>
+
+
+
+
+      <div class="holdall">
+        <div class="main">
+          <h1>Welcome to the Gardens</h1>
+          <p>
+            Here, We are dedicated to quality foods, and wonderful service.
+          </p>
+        </div>
+      </div>
+
+      <div id="bgimg-1"> 
+      </div>
+      <div class="SpaceMaker">
+        <div class="TextContain">
+          <div class="textCssIsTrash">
+            <div class="SpaceUp"></div>
+            <div class="CssTrash" onClick="window.location = 'food.html';"><h4>Fresh Fruits And Vegetables</h4>Learn More about the quality food we serve.</div>
+            <div class="SpaceDown"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bgimg-2">
+      </div>
+      <div class="SpaceMaker">
+        <div class="TextContain">
+          <div class="textCssIsTrash">
+            <div class="SpaceUp"></div>
+            <div class="CssTrash" onClick="window.location = 'AboutUs.html';"><h4>Growing Plants, Growing People</h4>Learn More about what we do.</div>
+            <div class="SpaceDown"></div>
+          </div>
+        </div>
+      </div>
+      <div id="bgimg-3">
+      </div>
+      <div class="SpaceMaker">
+        <div class="TextContain">
+          <div class="textCssIsTrash">
+            <div class="SpaceUp"></div>
+            <div class="CssTrash" onClick="window.location = 'Location.html';"><h4>Find Us</h4>Learn More about where we are.</div>
+            <div class="SpaceDown"></div>
+          </div>
+        </div>
+      </div>
+      <div id="bgimg-4">
+      </div>
+      <div class="SpaceMaker">
+        <div class="TextContain">
+          <div class="textCssIsTrash">
+            <div class="SpaceUp"></div>
+            <div class="CssTrash" onClick="window.location = 'Apply.html';"><h4>Apply</h4>Learn More about how to find a job at The Gardens.</div>
+            <div class="SpaceDown"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </html>

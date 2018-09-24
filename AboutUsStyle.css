@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+}
+
+
+#LiteralyEverything {
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.Order {
+  border: none;
+  background-color: #fdfbd9;
+  font: "Oswald", sans-serif;
+  font-size: 32px;
+  color: #44b0e2;
+  font-style: italic;
+}
+
+
+.Order:hover {
+  background-color: #faf7b7;
+  transition:
+    background-color .25s;
+}
+
+
+#HousingBox {
+  background-color: green;
+  float: left;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#header {
+  padding: 80x;
+  text-align: center;
+  background-image: url(https://s31.postimg.cc/wm11t33aj/brunch.png);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  min-width: 1%;
+}
+
+
+#navbar {
+  display: flex;
+  background-color: #06BD55;
+}
+
+
+.NavSpace {
+  flex: 20%
+
+}
+#navbar a {
+  color: #ffffff;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 60%;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 
+    background-color .25s,
+    color .25s;
+}
+
+
+@media screen and (max-width: 700px) {
+  .SpaceMaker, #navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #navbar a, .navspace {
+    flex: 1%;
+    background-color: inherit;
+  }
+}
+
+.holdall {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+
+.main h1 {
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.main {
+  flex: 10%;
+  background-color: #00ff90;
+  text-align: center;
+  padding: 2px, 2px;
+  font-size: 26px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 1px;
+  width: 100%;
+  z-index: 100;
+}
+
+@media screen and (max-width: 700px) {
+  .sticky {
+    position: relative;
+    background-attachment: scroll;
+
+  }
+}
+
+.TextContain {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  flex: 20%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  background-color: #fdfbd9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.CssTrashLetMeCenterSomethingBeforeItsTooLate {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.SpahsUp {
+  flex: 25%;
+  cursor: pointer;
+}
+
+.SpahsDown {
+  flex: 25%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.PsuedoCode {
+  flex: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+
+
+
+
+.TextContain {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  flex: 20%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: forestgreen;
+  background-color: #fdfbd9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.SpaceMaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TextBoxSpace{
+  flex: 40%;
+}
+
+
+.CssTrash a, h4 {
+  text-decoration: none;
+  color: black;
+  line-height: 10%;
+}
+
+@media screen and (max-width: 400) {
+  .CssTrash {  
+    line-height:10%;
+  }
+}
+
+.CssTrash:hover {
+  background-color: #faf7b7;
+}
+
+.textCssIsTrash {
+  display: flex;
+  flex-direction: column;
+}
+
+.SpaceUp {
+  flex: 2%
+}
+
+.CssTrash {
+  flex: auto;
+  cursor: pointer;
+  color: black;
+  transition: background-color .25s;
+}
+
+.SpaceDown {
+  flex: 2%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .totall {
+    flex-direction: column;
+  }
+}
+
+.ac_label h4{
+  font: 32px;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+
+.ac_container {
+  text-decoration: none;
+  color: black;
+  width: 400px;
+  margin: 10px auto 30px auto;
+  text-align: left;
+  width: 100%;
+  color: black;
+  background-color: #fdfbd9;
+  transition: background-color .25s;
+  padding: 1px;
+}
+
+.ac_container:hover {
+  background-color: #faf7b7;
+}
+
+
+#ac_1 {
+  font-family: 'Oswald', sans-serif;
+  padding: 25px 50px 25px 50px;
+  z-index: 20;
+  height: 30px;
+  cursor: pointer;
+  color: #777;
+  line-height: 40px;
+  font-size: 40px;
+}
+
+
+
+#ac_1 {
+  display: none;
+}
+
+#ac_2 {
+  display: none;
+}
+
+#ac_1:checked + .ac_label,
+#ac_1:checked + .ac_label:hover {
+  color: #3d7489;
+  transition: color .25s;
+  background-color: #faf7b7;
+}
+#ac_2:checked + .ac_label,
+#ac_2:checked + .ac_label:hover {
+  color: #3d7489;
+  transition: color .25s;
+  background-color: #faf7b7;
+}
+
+.ac_container article{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  background-color: #fcfacf;
+  text-align: center;
+  transition: 
+    height 0.3s ease-in-out, 
+    box-shadow 0.6s linear;
+}
+
+
+#ac_1:not(checked) ~ article{
+  transition: 
+    height 0.5s ease-in-out, 
+    box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+#ac_2:not(checked) ~ article{
+  transition: 
+    height 0.5s ease-in-out, 
+    box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+
+
+#ac_1:checked ~ article.ac_small{
+  height: 200px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+}
+
+#ac_2:checked ~ article.ac_small{
+  height: 200px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+}
+
